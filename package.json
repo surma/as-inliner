@@ -1,6 +1,6 @@
 {
   "name": "as-inliner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Inlines files into your AssemblyScript",
   "types": "lib.ts",
   "main": "transform.js",
