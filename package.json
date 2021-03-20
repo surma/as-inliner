@@ -17,8 +17,5 @@
   "homepage": "https://github.com/surma/as-inliner#readme",
   "peerDependencies": {
     "assemblyscript": "*"
-  },
-  "dependencies": {
-    "assemblyscript": "^0.18.15"
   }
 }
