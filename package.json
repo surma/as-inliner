@@ -4,9 +4,6 @@
   "description": "Inlines files into your AssemblyScript",
   "types": "lib.ts",
   "main": "transform.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/surma/as-inliner.git"
