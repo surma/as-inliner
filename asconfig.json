@@ -1,6 +1,6 @@
 {
   "options": {
-    "transform": ["./index.ts"]
+    "transform": ["./index.js"]
   }
 
 }
