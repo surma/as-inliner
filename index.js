@@ -13,9 +13,13 @@
 
 const fs = require("fs");
 const path = require("path");
-const { Transform } = require("assemblyscript/cli/transform");
-const assemblyscript = require("assemblyscript");
-const { Node, NodeKind, AssertionKind, ASTBuilder } = assemblyscript;
+const {
+  Node,
+  NodeKind,
+  AssertionKind,
+  ASTBuilder,
+  Transform,
+} = require("visitor-as/as");
 
 function* walk(maybeNode, visited = new WeakSet()) {
   if (!(maybeNode instanceof Node)) {

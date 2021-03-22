@@ -5,7 +5,9 @@
 ## Example & Documentation
 
 ```ts
-const image: StaticArray<u8> = Inliner.inlineFileAsStaticArray("../images/hero.png");
+const image: StaticArray<u8> = Inliner.inlineFileAsStaticArray(
+  "../images/hero.png"
+);
 const welcomeText: string = Inline.inlineFileAsString("../README.md");
 
 export function main(): void {
@@ -20,11 +22,31 @@ It’s worth nothing that inlining a file as a string will assume that the file 
 `as-inliner` works through [ASC transforms][transforms]:
 
 ```
-$ npx asc -b your/output/path/file.wasm --transform ./node_modules/as-inliner/transform.js -O3
+$ npx asc -b your/output/path/file.wasm --transform as-inliner -O3
+```
+
+or place it in your `asconfig.json`:
+
+```json
+{
+  ...
+  "options": {
+    "transform": ["as-inliner"]
+  }
+}
+```
+
+Or extend the `asconfig.json` here:
+
+```json
+{
+  "extend": "as-inliner/asconfig.json"
+}
 ```
 
 ---
+
 License Apache-2.0
 
-[AssemblyScript]: https://www.assemblyscript.org/
+[assemblyscript]: https://www.assemblyscript.org/
 [transforms]: https://www.assemblyscript.org/transforms.html#transforms
