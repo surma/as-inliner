@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Inlines files into your AssemblyScript",
   "types": "lib.ts",
-  "main": "transform.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/surma/as-inliner.git"
@@ -17,5 +17,11 @@
   "homepage": "https://github.com/surma/as-inliner#readme",
   "peerDependencies": {
     "assemblyscript": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35"
+  },
+  "dependencies": {
+    "visitor-as": "^0.4.0"
   }
 }
